@@ -1,17 +1,19 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
-    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css"/>
+    <title>SARS: Travel Planner</title>
+    <script src="../static/map.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/map.css"/>
+
 </head>
+<body>
+<!--The div element for the map -->
+<div id="map"></div>
 
-<body style='margin: 0'>
-<div style="width: 100%; height: 100%" id="mapContainer"></div>
 
-<script src="../static/map.js" type="text/javascript" charset="utf-8"></script>
-
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIbNFyKSpSqhHqJ0J06Bo5RBbpVOVXJfQ&callback=initMap&libraries=&v=weekly&channel=2"
+        async
+></script>
 </body>
 </html>
