@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+{% if response %}
+<div class="row">
+
+    <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h2> Total cases </h2>
+            </div>
+            <div class="card-body">
+                {{ response[0] }}
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h2> Total deaths </h2>
+            </div>
+            <div class="card-body">
+                {{response[1]}}
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h2> Total recovered </h2>
+            </div>
+            <div class="card-body">
+                {{response[2]}}
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+</html>
