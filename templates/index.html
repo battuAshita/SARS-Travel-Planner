@@ -45,6 +45,9 @@
                         <a class="nav-link" href="#covid">Covid</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#fact-talk">Fact-talk</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#data">Data</a>
                     </li>
                     <li class="nav-item">
@@ -101,6 +104,19 @@
     </div>
 
 </section>
+    
+<!-- Talk with bot -->
+
+<section id="fact-talk">
+    <h1>Wanna know some quick info about COVID-19?</h1>
+    <form action="{{ url_for( 'get_bot_response' ) }}" method="GET">
+            <input class="submit_button" type="submit" value="Talk with SARS-spy"></button>
+    </form>
+    
+</section>
+<br>
+<br>
+
 
 <!-- Call to Action -->
 
