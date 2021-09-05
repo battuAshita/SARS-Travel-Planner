@@ -1,7 +1,190 @@
-/* Set the size of the div element that contains the map */
-#map {
-  height: 935px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #7F7C82;
+}
+
+.submit_button{
+  position: relative;
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #39A6A3;
+  border-color: white;
+  margin: 10px;
+  width: 32%;
+  font-family: 'Montserrat';
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+}
+.submit_button:hover{
+  color: #39A6A3;
+  border-color: black;
+  background-color: #fff;
+}
+
+.search-bar{
+  position: relative;
+}
+
+.who-safe{
+  padding: 5%;
+}
+/* Headings */
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.6rem;
+  line-height: 1.8;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 6% 15% 8%;
+}
+
+/* Sections */
+.colored-section {
+  background-color: #39A6A3;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+#title {
+  background-color: #39A6A3;
+  color: #fff;
+  text-align: left;
+}
+
+.notice{
+  line-height: 2.0;
+}
+
+/* Title Image */
+.title-image {
+  width: 72%;
+  transform: rotate(0deg);
+  border-radius: 5%;
+  position: absolute;
+  right: 0;
+}
+
+/* with space parent child hierarchical selectors read right to left */
+
+/* no space read left to right with no hierarchy and no parent/child relationship */
+
+#title .container-fluid {
+  padding: 3% 14% 7%;
+}
+
+/* Features Section */
+#covid {
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+}
+
+#who{
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #64DFDF;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #39A6A3;
+}
+
+/* Testimonial Section */
+#testimonials {
+  background-color: #64DFDF;
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#data {
+  padding: 150px;
+  text-align: center;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+
+/* @media <type> <feature> */
+
+@media only screen and (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+
+  .title-image {
+    position: static;
+    transform: rotate(0deg);
+  }
 }
