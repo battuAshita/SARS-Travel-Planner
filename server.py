@@ -76,7 +76,7 @@ def displayInfo():
             print(response)
             return render_template('info.html', response=response)
 
-@app.route("/get", methods=['POST', 'GET'])
+@app.route("/get", methods=['GET'])
 def get_bot_response():
     if request.method == 'GET':
         return render_template("bot.html")
