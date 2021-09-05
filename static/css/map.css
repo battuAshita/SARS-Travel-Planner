@@ -35,6 +35,11 @@ p {
   position: relative;
 }
 
+.info{
+  padding: 5%;
+  background-color: #F3F1F5;
+}
+
 .who-safe{
   padding: 5%;
 }
