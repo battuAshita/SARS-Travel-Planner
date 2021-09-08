@@ -22,22 +22,23 @@ chatbot = ChatBot(
         }
     ],
     database_uri='sqlite:///database.sqlite3'
-) 
+)
 
- # Training a bot
+# Training a bot
 data_quesans = open('train_it/quesans.txt').read().splitlines()
 data_personal = open('train_it/personal.txt').read().splitlines()
 
 training_data = data_quesans + data_personal
 
 trainer = ListTrainer(chatbot)
-trainer.train(training_data)  
+trainer.train(training_data)
 
 # Training with English Corpus Data 
 trainer_corpus = ChatterBotCorpusTrainer(chatbot)
 trainer_corpus.train(
     'chatterbot.corpus.english'
-) 
+)
+
 
 # Hit the api to find the information about a specific country
 def getInfo(name):
@@ -70,17 +71,31 @@ def displayInfo():
 
         try:
             response = getInfo(country)
-            return render_template('info.html', response=response)
+            safety = int(response[2])/int(response[0])*100
+            if safety >= 70:
+                colour = 'green'
+
+            elif 40 <= safety < 70:
+                colour = 'yellow'
+
+            elif safety < 40:
+                colour = 'red'
+
+            return render_template('info.html', response=response, colour=colour)
         except LookupError:
             response = ['Data not available', 'Data not available', 'Data not available']
             print(response)
-            return render_template('info.html', response=response)
+            return render_template('info.html', response=response, colour=colour)
 
-@app.route("/get", methods=['GET'])
-def get_bot_response():
+
+@app.route('/botPage', methods=['GET'])
+def get_bot_page():
     if request.method == 'GET':
         return render_template("bot.html")
-         
+
+
+@app.route("/get")
+def get_bot_response():
     userText = request.args.get('msg')
     return str(chatbot.get_response(userText))
 
