@@ -4,6 +4,7 @@ from chatterbot.trainers import ListTrainer
 from chatterbot.trainers import ChatterBotCorpusTrainer
 import requests
 from bs4 import BeautifulSoup
+import re
 
 app = Flask(__name__)
 
@@ -71,14 +72,18 @@ def displayInfo():
 
         try:
             response = getInfo(country)
-            safety = int(response[2])/int(response[0])*100
-            if safety >= 70:
+            recovered = int(re.sub('[,]', '', response[2]))
+            active = int(re.sub('[,]', '', response[0]))
+            deaths = int(re.sub('[,]', '', response[1]))
+            safety = 1
+            print(safety)
+            if safety >= 90:
                 colour = 'green'
 
-            elif 40 <= safety < 70:
+            elif 50 <= safety < 90:
                 colour = 'yellow'
 
-            elif safety < 40:
+            elif safety < 50:
                 colour = 'red'
 
             return render_template('info.html', response=response, colour=colour)
