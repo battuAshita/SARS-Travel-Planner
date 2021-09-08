@@ -34,7 +34,7 @@ training_data = data_quesans + data_personal
 trainer = ListTrainer(chatbot)
 trainer.train(training_data)
 
-# Training with English Corpus Data 
+# Training with English Corpus Data
 trainer_corpus = ChatterBotCorpusTrainer(chatbot)
 trainer_corpus.train(
     'chatterbot.corpus.english'
@@ -75,7 +75,9 @@ def displayInfo():
             recovered = int(re.sub('[,]', '', response[2]))
             active = int(re.sub('[,]', '', response[0]))
             deaths = int(re.sub('[,]', '', response[1]))
-            safety = 1
+            total_cases = 22,00,00,000
+            safety = (active*100)/total_cases
+            safety = 100 - safety
             print(safety)
             if safety >= 90:
                 colour = 'green'
