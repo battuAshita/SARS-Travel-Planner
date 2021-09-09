@@ -18,21 +18,3 @@ What WHO recommendations for countries?
 WHO encourages all countries to enhance their surveillance for severe acute respiratory infections (SARI), to carefully review any unusual patterns of SARI or pneumonia cases and to notify WHO of any suspected or confirmed case of infection with novel coronavirus.	Countries are encouraged to continue strengthening their preparedness for health emergencies in line with the International Health Regulations (2005).
 Where can I find more information about known coronaviruses?
 For more information on MERS-CoV <a href="http://www.emro.who.int/health-topics/mers-cov/index.html">here</a>, For More information on SARS-CoV <a href="https://www.who.int/csr/sars/en/">here</a>.
-Hello
-Hello, My name is SARS-spy. What can I do for you?
-Hi
-Hello, My name is SARS-spy. What can I do for you?
-Are you a robot?
-Yes, My name is SARS-spy
-Are you a bot?
-Yes, My name is SARS-spy
-Are you a chatbot?
-Yes, My name is SARS-spy
-Are you real?'
-I am a ChatBot, My name is SARS-spy
-What is your name?
-My name is SARS-spy
-Who made you?
-The cool Group-12 made me
-What do you do?
-I am made to clarify your COVID-19 related doubts
