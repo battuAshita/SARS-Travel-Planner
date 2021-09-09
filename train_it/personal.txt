@@ -3,7 +3,7 @@ Hello, My name is SARS-spy. What can I do for you?
 Hola
 Hello, My name is SARS-spy. What can I do for you?
 Name
-Yes, My name is SARS-spy
+My name is SARS-spy
 Are you a bot?
 Yes, My name is SARS-spy
 Are you a chatbot?
