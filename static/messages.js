@@ -5,7 +5,7 @@ const Chat = document.querySelector(".msger-chat");
 
 const BOT_IMG = "https://image.flaticon.com/icons/svg/327/327779.svg";
 const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
-const BOT_NAME = "SARSBot";
+const BOT_NAME = "SARS Bot";
 const PERSON_NAME = "You";
 
 Form.addEventListener("submit", event => {
@@ -43,8 +43,7 @@ function botResponse(rawText) {
     $.get("/get", {msg: rawText}).done(function (data) {
         console.log(rawText);
         console.log(data);
-        const msgText = data;
-        appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+        appendMessage(BOT_NAME, BOT_IMG, "left", data);
 
     });
 

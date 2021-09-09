@@ -91,7 +91,7 @@ def displayInfo():
         except LookupError:
             response = ['Data not available', 'Data not available', 'Data not available']
             print(response)
-            return render_template('info.html', response=response, colour=colour)
+            return render_template('info.html', response=response)
 
 
 @app.route('/botPage', methods=['GET'])
