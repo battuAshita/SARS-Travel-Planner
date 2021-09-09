@@ -29,7 +29,7 @@
             crossorigin="anonymous"></script>
   </head>
   <body>
-    {% if response and colour%}
+    {% if response and colour %}
 
     <div class="info">
       <h2 class="section-heading">Covid Complete Data.</h2>
@@ -56,7 +56,7 @@
                     <h2> Total deaths </h2>
                 </div>
                 <div class="card-body">
-                    {{response[1]}} {{colour}}
+                    {{response[1]}}
                     <p></p>
                 </div>
             </div>
@@ -74,13 +74,29 @@
             </div>
         </div>
     </div>
-
+    {%  if colour == 'green' %}
     <div class="roww">
-      <div class="col-md-8" align="left"  id="output_div">
-        <h3>The Place you are planning to go is safe. Take Precuations and have fun. Happy Travel.</h3>
+      <div class="col-md-8"  align="left"  id="output_div">
+        <h3>The place you are planning to go is safe. Take necessary precautions and have fun. Happy Travelling.</h3>
       </div>
     </div>
     {% endif %}
+    {%  if colour == 'yellow' %}
+    <div class="roww">
+      <div class="col-md-8" align="left"  id="output_div">
+        <h3>The place you are planning to go is not that safe. Take necessary precautions and have fun. Happy Travelling.</h3>
+      </div>
+    </div>
+    {% endif %}
+    {%  if colour == 'red' %}
+    <div class="roww">
+      <div class="col-md-8"  align="left"  id="output_div">
+        <h3>The place you are planning to go is safe. Take necessary precautions and have fun. Happy Travelling.</h3>
+      </div>
+    </div>
+    {% endif %}
+{% endif %}
+
   </body>
 
 </html>

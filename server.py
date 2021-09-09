@@ -72,11 +72,9 @@ def displayInfo():
 
         try:
             response = getInfo(country)
-            recovered = int(re.sub('[,]', '', response[2]))
             active = int(re.sub('[,]', '', response[0]))
-            deaths = int(re.sub('[,]', '', response[1]))
-            total_cases = 22,00,00,000
-            safety = (active*100)/total_cases
+            total_cases = 220000000
+            safety = (active * 100) / total_cases
             safety = 100 - safety
             print(safety)
             if safety >= 90:
@@ -89,6 +87,7 @@ def displayInfo():
                 colour = 'red'
 
             return render_template('info.html', response=response, colour=colour)
+
         except LookupError:
             response = ['Data not available', 'Data not available', 'Data not available']
             print(response)
