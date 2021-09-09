@@ -76,7 +76,7 @@ def displayInfo():
             total_cases = 220000000
             safety = (active * 100) / total_cases
             safety = 100 - safety
-            print(safety)
+
             if safety >= 90:
                 colour = 'green'
 

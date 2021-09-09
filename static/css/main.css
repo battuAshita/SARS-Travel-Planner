@@ -246,3 +246,7 @@ p {
 .ic3{
   color: white;
 }
+
+i {
+    horiz-align: right;
+}
