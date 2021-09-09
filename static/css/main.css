@@ -214,3 +214,29 @@ p {
     -moz-border-radius: 10;
     border-radius: 10px;
 }
+
+.roww1 {
+    text-align: center;
+    background-color: #FFC93C;
+    max-width: 500px;
+    margin: 10px auto;
+    margin-top: 10px;
+    color: white;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+}
+
+.roww2 {
+    text-align: center;
+    background-color: #EF4F4F;
+    max-width: 500px;
+    margin: 10px auto;
+    margin-top: 10px;
+    color: white;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+}
