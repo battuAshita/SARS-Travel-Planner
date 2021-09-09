@@ -205,7 +205,7 @@ p {
 .roww {
     text-align: center;
     background-color: #39A6A3;
-    max-width: 500px;
+    max-width: 750px;
     margin: 10px auto;
     margin-top: 10px;
     color: white;
@@ -218,7 +218,7 @@ p {
 .roww1 {
     text-align: center;
     background-color: #FFC93C;
-    max-width: 500px;
+    max-width: 750px;
     margin: 10px auto;
     margin-top: 10px;
     color: white;
@@ -231,7 +231,7 @@ p {
 .roww2 {
     text-align: center;
     background-color: #EF4F4F;
-    max-width: 500px;
+    max-width: 750px;
     margin: 10px auto;
     margin-top: 10px;
     color: white;
@@ -239,4 +239,10 @@ p {
     -webkit-border-radius: 10;
     -moz-border-radius: 10;
     border-radius: 10px;
+}
+.ic2{
+  color: red;
+}
+.ic3{
+  color: white;
 }
